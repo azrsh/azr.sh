@@ -52,6 +52,10 @@ a:hover {
   object-fit: cover;
 }
 
+table caption {
+  display: none;
+}
+
 .history-table {
   border-collapse: collapse;
 }
