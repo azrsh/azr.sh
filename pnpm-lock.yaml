@@ -13,7 +13,7 @@ importers:
         version: 4.12.0
       prettier:
         specifier: ^3.5.3
-        version: 3.5.3
+        version: 3.6.2
       serve:
         specifier: ^14.2.4
         version: 14.2.4
@@ -614,8 +614,8 @@ packages:
     resolution: {integrity: sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==}
     engines: {node: '>=4'}
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1436,7 +1436,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  prettier@3.5.3: {}
+  prettier@3.6.2: {}
 
   punycode@2.3.1: {}
 
