@@ -43,13 +43,15 @@
       }
     ]
   },
-  "education": [{
-    "institution": "University of Tsukuba",
-    "area": "Information Engineering",
-    "studyType": "Bachelor",
-    "startDate": "2020-04",
-    "endDate": "2024-03"
-  }],
+  "education": [
+    {
+      "institution": "University of Tsukuba",
+      "area": "Information Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2020-04",
+      "endDate": "2024-03"
+    }
+  ],
   "awards": [
     {
       "date": "2022-03-05",
