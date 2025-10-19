@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "azrsh",
+    "email": "me@azr.sh",
+    "url": "https://azr.sh",
+    "label": "Software Engineer",
+    "location": {
+      "countryCode": "JP",
+      "region": "Tokyo",
+      "city": "Tokyo"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "azrsh",
+        "url": "https://github.com/azrsh"
+      },
+      {
+        "network": "Twitter",
+        "username": "a2r5h",
+        "url": "https://twitter.com/a2r5h"
+      },
+      {
+        "network": "Zenn",
+        "username": "azrsh",
+        "url": "https://zenn.dev/azrsh"
+      },
+      {
+        "network": "Keybase",
+        "username": "azarashi2931",
+        "url": "https://keybase.io/azarashi2931"
+      },
+      {
+        "network": "Wantedly",
+        "username": "azrsh",
+        "url": "https://wantedly.com/id/azrsh"
+      },
+      {
+        "network": "LAPRAS",
+        "username": "azarashi2931",
+        "url": "https://lapras.com/public/azarashi2931"
+      }
+    ]
+  },
+  "education": [{
+    "institution": "University of Tsukuba",
+    "area": "Information Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2020-04",
+    "endDate": "2024-03"
+  }],
+  "awards": [
+    {
+      "date": "2022-03-05",
+      "awarder": "ICTSC2022運営委員会",
+      "title": "ICTSC2022 優勝"
+    }
+  ],
+  "certificates": [
+    {
+      "date": "2021-06-01",
+      "issuer": "情報処理推進機構",
+      "name": "応用情報技術者試験",
+      "url": "https://www.ipa.go.jp/shiken/kubun/ap.html"
+    },
+    {
+      "date": "2022-04-06",
+      "issuer": "茨城県公安委員会",
+      "name": "普通自動車運転免許証"
+    },
+    {
+      "date": "2022-12-01",
+      "issuer": "情報処理推進機構",
+      "name": "データベーススペシャリスト試験",
+      "url": "https://www.ipa.go.jp/shiken/kubun/db.html"
+    },
+    {
+      "date": "2023-06-01",
+      "issuer": "情報処理推進機構",
+      "name": "ネットワークスペシャリスト試験",
+      "url": "https://www.ipa.go.jp/shiken/kubun/nw.html"
+    },
+    {
+      "date": "2023-12-01",
+      "issuer": "情報処理推進機構",
+      "name": "エンベデッドシステムスペシャリスト試験",
+      "url": "https://www.ipa.go.jp/shiken/kubun/es.html"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Japanese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ]
+}
