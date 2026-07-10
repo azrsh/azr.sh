@@ -90,6 +90,20 @@ async function serveIndex(context) {
   return response;
 }
 
+/**
+ * Deep links like "/slides/my-talk/2" are client-side SPA routes, so
+ * unresolved extension-less paths fall back to the deck's root index.html.
+ * The deck is the first path segment under /slides.
+ *
+ * @param {string} pathname - URL pathname, always starting with "/slides"
+ * @returns {string | null} fallback R2 object key, or null
+ */
+function spaFallbackKey(pathname) {
+  const key = decodeURIComponent(pathname).replace(/^\/slides\/?/, "");
+  if (key === "" || key.split("/").pop().includes(".")) return null;
+  return `${key.split("/")[0]}/index.html`;
+}
+
 async function notFound(context) {
   const page = await context.env.ASSETS.fetch(
     new URL("/404.html", context.request.url),
@@ -109,7 +123,14 @@ export async function onRequestGet(context) {
     return serveIndex(context);
   }
 
-  const object = await context.env.SLIDES.get(resolveKey(pathname));
+  const key = resolveKey(pathname);
+  let object = await context.env.SLIDES.get(key);
+  if (!object) {
+    const fallbackKey = spaFallbackKey(pathname);
+    if (fallbackKey && fallbackKey !== key) {
+      object = await context.env.SLIDES.get(fallbackKey);
+    }
+  }
   if (!object) {
     return notFound(context);
   }
