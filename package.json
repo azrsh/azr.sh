@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "serve public",
     "lint": "markuplint public/*.html",
-    "format": "prettier -w public"
+    "format": "prettier -w public functions"
   },
   "keywords": [],
   "author": "",
